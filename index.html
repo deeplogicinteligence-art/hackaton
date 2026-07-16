@@ -185,8 +185,7 @@
                         alt="Icone de um dedo indicador clicando"><span>Regulamento</span>
                 </a>
 
-                <a href="https://app.smartsheet.com/b/form/ce2a4f9bce3645b6baa335a48d49d12c"
-                    class="btn-subscribe-regulation btn-format" target="_blank">
+                <a href="#" class="btn-subscribe-regulation btn-format" onclick="openModal('modal-projeto'); return false;">
                     <img src="./images/icone-inscrição.png" alt="Icone de um dedo indicador clicando"><span>Envie seu
                         projeto</span>
                 </a>
@@ -303,6 +302,96 @@
         </div>
     </div>
 
+    <div id="modal-projeto" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-projeto-title">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal('modal-projeto')" aria-label="Fechar">&times;</button>
+
+            <div class="modal-header">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none"
+                    stroke="#0C306C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <h2 id="modal-projeto-title">Envio do Projeto</h2>
+            </div>
+
+            <form id="form-projeto" onsubmit="handleProjectSubmit(event)" novalidate>
+                <fieldset class="modal-fieldset">
+                    <legend>Equipe</legend>
+
+                    <div class="modal-field">
+                        <label for="aluno-participante-1">Aluno Participante 1 <span class="required">*</span></label>
+                        <input type="text" id="aluno-participante-1" name="aluno-participante-1"
+                            placeholder="Nome completo do participante" required>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="aluno-participante-2">Aluno Participante 2 <span class="required">*</span></label>
+                        <input type="text" id="aluno-participante-2" name="aluno-participante-2"
+                            placeholder="Nome completo do participante" required>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="nome-equipe">Nome da Equipe <span class="required">*</span></label>
+                        <input type="text" id="nome-equipe" name="nome-equipe" placeholder="Digite o nome da equipe"
+                            required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="modal-fieldset">
+                    <legend>Upload do Projeto</legend>
+
+                    <div class="project-upload-copy">
+                        <h3>UPLOAD DO PROJETO <span class="required">*</span></h3>
+                        <p>Envie aqui os arquivos do projeto:</p>
+                        <ol>
+                            <li>Canvas</li>
+                            <li>Storyboard APP</li>
+                            <li>Vídeo PITCH equipe, até 2 minutos.</li>
+                        </ol>
+                        <p>Esses arquivos podem ser enviados em formato de apresentação (Ex: Canva, PowerPoint), ou enviar as imagens e vídeo separadamente.</p>
+                        <p>O envio do(s) arquivo(s) deverá ser feito por uma pasta zipada.</p>
+                    </div>
+
+                    <div class="modal-field">
+                        <label for="arquivo-projeto">Arquivo do Projeto <span class="required">*</span></label>
+                        <input type="file" id="arquivo-projeto" name="arquivo-projeto"
+                            accept=".zip,.rar,.7z,.pdf,.ppt,.pptx,.mp4,.png,.jpg,.jpeg" required>
+                        <label for="arquivo-projeto" class="upload-dropzone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                                stroke="#2C56C9" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <path d="M12 18v-6" />
+                                <path d="M9.5 14.5 12 12l2.5 2.5" />
+                            </svg>
+                            <strong>Solte os arquivos aqui</strong>
+                            <span>Explorar</span>
+                            <small id="arquivo-projeto-nome">Nenhum arquivo selecionado</small>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-modal-cancel" onclick="closeModal('modal-projeto')">Cancelar</button>
+                    <button type="submit" class="btn-modal-submit">Enviar Projeto</button>
+                </div>
+            </form>
+
+            <div id="modal-projeto-success" class="modal-success" style="display:none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                    stroke="#BED952" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                    <polyline points="22 4 12 14.01 9 11.01" />
+                </svg>
+                <h3>Projeto enviado!</h3>
+                <p>Recebemos os dados da equipe e o arquivo selecionado.</p>
+                <button class="btn-modal-submit" onclick="closeModal('modal-projeto')">Fechar</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="participants gp-format">
             <h2>Realização:</h2>
@@ -316,30 +405,43 @@
 
     <script>
         // ===== MODAL =====
-        function openModal() {
-            const modal = document.getElementById('modal-cadastro');
+        function openModal(modalId = 'modal-cadastro') {
+            const modal = document.getElementById(modalId);
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
         }
 
-        function closeModal() {
-            const modal = document.getElementById('modal-cadastro');
+        function closeModal(modalId = 'modal-cadastro') {
+            const modal = document.getElementById(modalId);
             modal.classList.remove('active');
             document.body.style.overflow = '';
-            // Resetar para o form se estiver mostrando sucesso
-            document.getElementById('form-cadastro').style.display = '';
-            document.getElementById('modal-success').style.display = 'none';
-            document.getElementById('form-cadastro').reset();
+
+            if (modalId === 'modal-cadastro') {
+                document.getElementById('form-cadastro').style.display = '';
+                document.getElementById('modal-success').style.display = 'none';
+                document.getElementById('form-cadastro').reset();
+            }
+
+            if (modalId === 'modal-projeto') {
+                document.getElementById('form-projeto').style.display = '';
+                document.getElementById('modal-projeto-success').style.display = 'none';
+                document.getElementById('form-projeto').reset();
+                document.getElementById('arquivo-projeto-nome').textContent = 'Nenhum arquivo selecionado';
+            }
         }
 
-        // Fechar ao clicar no overlay
-        document.getElementById('modal-cadastro').addEventListener('click', function (e) {
-            if (e.target === this) closeModal();
+        document.querySelectorAll('.modal-overlay').forEach(function (modal) {
+            modal.addEventListener('click', function (e) {
+                if (e.target === this) closeModal(this.id);
+            });
         });
 
-        // Fechar com ESC
         document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape') closeModal();
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.modal-overlay.active').forEach(function (modal) {
+                    closeModal(modal.id);
+                });
+            }
         });
 
         // ===== MÁSCARA DE TELEFONE (formato: 99 9999-9999) =====
@@ -369,6 +471,23 @@
             // Esconde o form e mostra sucesso
             document.getElementById('form-cadastro').style.display = 'none';
             document.getElementById('modal-success').style.display = 'flex';
+        }
+
+        document.getElementById('arquivo-projeto').addEventListener('change', function (e) {
+            const fileName = e.target.files.length ? e.target.files[0].name : 'Nenhum arquivo selecionado';
+            document.getElementById('arquivo-projeto-nome').textContent = fileName;
+        });
+
+        function handleProjectSubmit(e) {
+            e.preventDefault();
+            const form = e.target;
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            document.getElementById('form-projeto').style.display = 'none';
+            document.getElementById('modal-projeto-success').style.display = 'flex';
         }
     </script>
 </body>
