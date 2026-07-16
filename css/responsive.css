@@ -1,0 +1,667 @@
+/* Responsividade para 1600px */
+@media (max-width:1600px){
+    .banner-rules{
+        padding-left: 180px;
+    }
+    .btn-subscribe{
+        bottom: 20vh
+    }
+}
+/* Responsividade para 1440px */
+@media (max-width: 1440px) {
+    header {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 900px;
+    }
+    .btn-subscribe{
+        bottom: 28vh;
+    }
+    .btn-subscribe span {
+        font-size: 30px;
+    }
+    .main-tittle {
+        font-size: 36px;
+        padding: 60px;
+    }
+    .tittle {
+        font-size: 80px;
+    }
+    .common-text,
+    .common-text span {
+        font-size: 30px;
+    }
+    .about-challenge,
+    .whats-challenge {
+        max-width: 100%;
+        padding: 30px;
+    }
+    .whats-challenge h2{
+        font-size: 69px;
+    }
+    .group-about-challenge{
+        padding-right: 30px;
+    }
+    .group-whats-challenge{
+        padding-left: 30px;
+    }
+    .banner-rules {
+        padding-left: 200px;
+    }
+    .tittle-rules {
+        font-size: 60px;
+    }
+    .number-rules h2 {
+        font-size: 70px;
+    }
+    .number-rules p {
+        font-size: 24px;
+    }
+    .gp-text {
+        font-size: 70px;
+    }
+    .timeline-item h2 {
+        top: 355px;
+        font-size: 20px;
+    }
+    .timeline-item p {
+        top: 380px;
+        font-size: 26px;
+    }
+    .gp-format h2 {
+        font-size: 36px;
+    }
+}
+/* Responsividade para 1024px */
+@media (max-width: 1024px) {
+    header {
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+    .btn-subscribe span {
+        font-size: 28px;
+    }
+    .main-tittle {
+        font-size: 30px;
+        padding: 50px;
+    }
+    .tittle {
+        font-size: 70px;
+        letter-spacing: -5px;
+    }
+    .common-text,
+    .common-text span {
+        font-size: 28px;
+        width: 397px;
+    }
+    .about-challenge,
+    .whats-challenge,
+    .about-theme {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .about-challenge h2,
+    .whats-challenge h2,
+    .about-theme h2{
+        font-size: 66px;
+        line-height: 60px;
+    }
+    .about-theme{
+        padding-top: 0px;
+    }
+    .group-ods{
+        gap: 20px
+    }
+    .banner-rules {
+        padding-left: 70px;
+        height: 600px;
+    }
+    .tittle-rules {
+        font-size: 50px;
+    }
+    .number-rules h2 {
+        font-size: 60px;
+    }
+    .number-rules p {
+        font-size: 22px;
+    }
+    .ft-timeline{
+        gap: 10px;
+    }
+    .ft-awards{
+        gap: 15px;
+    }
+    .gp-text {
+        font-size: 60px;
+    }
+    .timeline-item h2 {
+        top: 358px;
+        font-size: 18px;
+    }
+    .timeline-item p {
+        top: 380px;
+        font-size: 22px;
+    }
+    .regulations{
+        gap: 25px;
+    }
+    .gp-format h2 {
+        font-size: 34px;
+    }
+    .video-tutorial iframe{
+        width: 800px;
+        height: 400px;
+    }
+    #logo-alto-giro{
+        width: 150px ;
+    }
+    #logo-happy{
+        width: 170px;
+    }
+    #logo-adventista{
+        width: 230px;
+    }
+}
+
+/* Responsividade para 768px */
+@media (max-width: 768px) {
+    header {
+        background: url(../images/hackathon-banner-main-mobile.png) no-repeat center center;
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+    }
+    .btn-subscribe {
+        bottom: 25vh;
+        height: 45px;
+    }
+    .btn-subscribe span {
+        font-size: 24px;
+    }
+    .main-tittle{
+        font-size: 20px;
+        padding: 40px;
+    }
+    .main-tittle span{
+        font-size: 20px;
+    }
+    .tittle {
+        font-size: 60px;
+        text-align: center;
+        letter-spacing: -2px;
+    }
+    .common-text,
+    .common-text span {
+        font-size: 19px;
+        text-align: justify;
+        padding: 0px 5px;
+    }
+    .about-challenge,
+    .whats-challenge {
+        max-width: 100%;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .group-about-challenge{
+        margin-top: 30px;
+    }
+    .group-about-challenge,
+    .group-about-theme {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+    }
+    .group-whats-challenge{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;    
+    }
+    .group-about-challenge img,
+    .group-whats-challenge img{
+        width: 387px;
+        height: 387px;
+    }
+    .group-about-theme img{
+        height: 487px;
+    }
+    .group-ods{
+        display: flex;
+        align-items: center;
+    }
+    .whats-challenge h2{
+        font-size: 55px;
+    }
+    .banner-rules {
+        background: url(../images/hackathon-banner-regras-mobile.png) no-repeat center center;
+        padding-top: 0px;
+        padding-left: 50px;
+        height: 600px;
+    }
+    .rules{
+        display: flex;
+        gap: 35px;
+    }
+    .tittle-rules {
+        font-size: 30px;
+        line-height: 20px;
+        padding: 25px 0px;
+    }
+    .number-rules{
+        display: flex;
+        align-items: center;
+    }
+    .number-rules h2 {
+        font-size: 40px;
+        line-height: 20px;
+    }
+    .number-rules p {
+        font-size: 18px;
+    }
+    .ft-timeline{
+        padding-top: 10px;
+    }
+    .gp-text {
+        font-size: 50px;
+    }
+    .awards h1{
+        margin-bottom: -15px;
+    }
+    .timeline-item h2 {
+        top: 255px;
+        font-size: 16px;
+    }
+    .timeline-item p {
+        top: 275px;
+        font-size: 20px;
+    }
+    .ft-awards{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .btn-format{
+        font-size: 20px;
+    }
+    .gp-format h2 {
+        font-size: 30px;
+    }
+    footer {
+        height: 355px;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .video-tutorial iframe{
+        width: 620px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 430px){
+    header {
+        background: url(../images/hackathon-banner-main-mobile-small.png) no-repeat center center;
+        width: 100vw;
+        height: 770px;
+    }
+    .btn-subscribe{
+        bottom: 17vh;
+        width: 140px;
+        height: 25px;
+    }
+    .btn-subscribe span {
+        font-size: 15px;
+    }
+    .btn-subscribe img{
+        width: 25px;
+        height: 25px;
+    }
+    .main-tittle {
+        font-size: 11px;
+        padding: 9px;
+    }
+    .main-tittle span{
+        font-size: 11px;
+    }
+    .tittle {
+        font-size: 50px;
+        padding: 0px 0px;
+        letter-spacing: -3px;
+    }
+    .common-text,
+    .common-text span {
+        font-size: 20px;
+        padding: 0px;
+    }
+    .common-text{
+        width: 350px;
+        padding: 0px 5px;
+    }
+    .about-challenge,
+    .whats-challenge,
+    .about-theme {
+        max-width: 100%;
+        padding: 5px;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .about-challenge p,
+    .whats-challenge p,
+    .about-theme p{
+        font-size: 15px;
+    }
+    .about-challenge span,
+    .whats-challenge span,
+    .about-theme span{
+        font-size: 15px;
+    }
+    .about-challenge h2{
+        font-size: 55px;
+    }
+    .about-theme h2{
+        font-size: 60px;
+    }
+    .whats-challenge h2{
+        font-size: 45px;
+    }
+    .group-about-challenge,
+    .group-about-theme {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 15px;
+        width: 100%;
+    }
+    .group-whats-challenge {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+        gap: 15px;
+        width: 100%;
+    }
+    .group-about-challenge img,
+    .group-whats-challenge img,
+    .group-about-theme img{
+        width: 80%;
+        height: 80%;
+    }
+    .group-ods p{
+        width: 250px;
+        font-size: 18px;
+        text-align: left;
+    }
+    .group-ods{
+        flex-direction: column;
+    }
+    .group-ods span{
+        font-size: 18px;
+    }
+    .banner-rules {
+        background: url(../images/hackathon-banner-regras-mobile.png) no-repeat center center;
+        padding: 0px;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    .display-rules{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .display-rules h3{
+        font-size: 40px;
+    }
+    .tittle-rules {
+        font-size: 20px;   
+        padding: 20px 0px 0px 0px;     
+        line-height: 20px;  
+    }
+    .rules{
+        gap: 0px;
+    }
+    .number-rules{
+        padding-top: 15px;
+        height: 100%;
+        width: 350px;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 15px;
+    }
+    .number-rules h2 {
+        font-size: 20px;
+        line-height: 15px;
+    }
+    .number-rules p {
+        font-size: 13px;
+        line-height: 15px;
+        padding: 0px;
+    }
+    .timeline h1{
+        margin-bottom: -30px;
+    }
+    .gp-text {
+        font-size: 30px;
+        letter-spacing: -2px;
+    }
+    .ft-timeline{
+        grid-template-columns: 1fr;
+        padding-top: 20px;
+        gap: 25px;
+    }
+    .timeline-item h2 {
+        top: 365px;
+        font-size: 21px;
+    }
+    .timeline-item p {
+        top: 390px;
+        font-size: 25px;
+    }
+    .gp-format h2 {
+        font-size: 23px;
+    }
+    .awards h1{
+        margin-bottom: -30px;
+    }
+    .awards p{
+        font-size: 12px;
+    }
+    .award-item img{
+        width: 300px;
+    }
+    .regulations{
+        flex-direction: column;
+    }
+    footer {
+        height: 650px;
+        flex-direction: column;
+    }
+    .gp-branding{
+        flex-direction: column;
+    }
+    .second{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo-logitech{
+        width: 50%;
+        height: 50%;
+    }
+    #logo-alto-giro{
+        width: 60%;
+        height: 60%;
+    }
+    .video-tutorial{
+        margin-top: 50px;
+    }
+    .video-tutorial iframe{
+        width: 350px;
+        height: 400px;
+    }
+}
+/* Responsividade para 375px */
+@media (max-width: 375px) {
+    .banner-rules{
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    .display-rules{
+        padding: 0px;
+    }
+    .number-rules{
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .awards p{
+        font-size: 12px;
+    }
+}
+/* Responsividade para 320px */
+@media (max-width: 320px) {
+    header {
+        background: url(../images/hackathon-banner-main-mobile-extra-small.png) no-repeat center center;
+        width: 100%;
+        height: 770px;
+    }
+    .btn-subscribe {
+        bottom: 18vh;
+        height: 20px;
+    }
+    .btn-subscribe img{
+        width: 20px;
+        height: 20px;
+    }
+    .btn-subscribe span {
+        font-size: 15px;
+    }
+    .main-tittle {
+        font-size: 09px;
+        padding: 20px;
+    }
+    .main-tittle span{
+        font-size: 10px;
+    }
+    .tittle {
+        font-size: 30px;
+        letter-spacing: -1px;
+    }
+    .common-text{
+        font-size: 20px;
+        text-align: center;
+    }
+    .common-text span{
+        font-size: 18px;
+    }
+    .common-text{
+        width: 300px;
+    }
+    .about-challenge,
+    .whats-challenge,
+    .about-theme {
+        width: 320px;
+        padding: 0px;
+    }
+    .about-challenge h2,
+    .whats-challenge h2,
+    .about-theme h2{
+        font-size: 30px;
+    }
+    .group-about-challenge,
+    .group-about-theme {
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 15px;
+    }
+    .group-whats-challenge{
+        flex-direction: column-reverse;
+    }
+    .group-about-challenge img,
+    .group-whats-challenge img,
+    .group-about-theme img{
+        width: 80%;
+        height: 80%;
+    }
+    .group-ods{
+        flex-direction: column;
+    }
+    .group-ods p,
+    .group-ods span{
+        text-align: left;
+        font-size: 24px;
+    }
+    .banner-rules {
+        height: 500px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .rules{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 35px;
+    }
+    .display-rules{
+        align-items: center;
+        justify-content: center;
+    }
+    .tittle-rules {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    .number-rules{
+        width: 250px;
+        padding: 0px;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .number-rules h2 {
+        font-size: 20px;
+    }
+    .number-rules p {
+        font-size: 12px;
+        width: 250px;
+    }
+    .gp-text {
+        font-size: 30px;
+    }
+    .timeline-item h2 {
+        top: 350px;
+        font-size: 21px;
+    }
+    .timeline-item p {
+        top: 380px;
+        font-size: 21px;
+    }
+    .gp-format h2 {
+        font-size: 24px;
+    }
+    .award-item img{
+        width: 300px;
+    }
+    .regulations{
+        flex-direction: column;
+    }
+    footer {
+        height: 650px;
+        flex-direction: column;
+    }
+    .gp-branding{
+        flex-direction: column;
+    }
+    .second{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .video-tutorial{
+        margin-top: 35px;
+    }
+    .video-tutorial iframe{
+        width: 220px;
+        height: 220px;
+    }
+}

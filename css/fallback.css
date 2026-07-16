@@ -1,0 +1,20 @@
+/* ============================================================
+   FALLBACK.CSS
+   As 3 imagens de fundo (header, banner-rules, footer) já foram
+   adicionadas em index_files/../images/ e estao sendo usadas
+   normalmente pelo style.css original -- nada a fazer aqui.
+
+   Ainda falta apenas:
+   ../fonts/Kobe1.1-Black.otf  (fonte "Kobe" usada nos titulos)
+
+   Quando voce tiver o arquivo da fonte, coloque em
+   index_files/../fonts/Kobe1.1-Black.otf -- o @font-face
+   original em style.css vai passar a funcionar sozinho, e ai
+   pode apagar este arquivo (e o <link> dele no index.html).
+   ============================================================ */
+
+.tittle,
+.tittle-rules,
+.gp-text{
+    font-family: 'Arial Black', 'Roboto', sans-serif;
+}

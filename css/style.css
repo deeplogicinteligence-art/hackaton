@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Kobe';
+    src: url(../fonts/Kobe1.1-Black.otf);
+}
+
+header {
+    background: url('../images/hackathon-banner-main.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    position: relative;
+    z-index: 1;
+}
+
+.btn-subscribe {
+    position: relative; 
+    bottom: 22vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; 
+    background-color: #fff;
+    gap: 9px;
+    padding: 5px 10px 4px 9px;
+    width: auto;
+    height: 52px;
+    border-radius: 5px;
+    color: #0C306C;
+    letter-spacing: -1px;
+}
+
+.btn-subscribe:hover{
+    background-color: #0C306C;
+    color: #FFF;
+}
+
+.btn-subscribe:hover img{
+    filter: contrast(0);
+}
+
+.btn-subscribe span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    line-height: 39px;
+    font-weight: 800;
+}
+
+.first-one{
+   background-color: #00BEDE;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main-tittle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 46px;
+    font-weight: 400;
+    color: #0C306C;
+    padding: 78px;
+}
+
+.main-tittle span{
+    color: #0C306C;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.tittle{
+    font-family: 'Kobe', sans-serif;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 95px;
+    color: #0C306C;
+    letter-spacing: -5px;
+}
+
+.common-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #0C306C;
+    text-align: left;
+    width: 586px;
+    padding: 0px 2px;
+}
+
+.common-text span{
+    font-family: 'Roboto', sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #0C306C;
+}
+
+.about{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.about-challenge{
+    max-width: 586px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.about-challenge-img{
+    max-width: 477px;
+
+}
+
+.group-about-challenge{
+    display: flex;
+    gap: 40px;
+    padding-top: 150px;
+    margin-bottom: 49px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.whats-challenge{
+    max-width: 532px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.group-whats-challenge{
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 49px;
+}
+
+.group-about-theme{
+    display: flex;
+    width: 100%;          /* novo */
+    gap: 40px;
+    margin-bottom: 49px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-theme{
+    max-width: 100%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+.about-theme .common-text{
+    width: 1100px;           /* novo — o texto tinha 586px fixo */
+}
+
+.group-ods{
+    display: flex;
+    gap: 5px;
+}
+
+.group-ods img{
+    width: 126px;
+    height: 126px;
+}
+
+.group-ods p{
+    width: 490px;
+    letter-spacing: -1px;
+}
+
+
+.backgroud-color-span{
+    background-color: #BED952;
+}
+
+.banner-rules{
+    background: url(../images/hackathon-banner-regras.png) no-repeat center center;
+    background-size: cover;
+    height: 760px; 
+    display: flex;
+    align-items: flex-start;
+    z-index: 1;
+    margin-top: 32px;
+    padding-top: 82px;
+    padding-left: 410px;
+    box-shadow: 0 0 20px #00E0FF;
+}
+
+.display-rules{
+    padding-left: 15px;
+}
+
+.display-rules h3{
+    font-size: 80px;
+}
+
+.rules{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 35px;
+
+}
+
+.tittle-rules{
+    font-family:'kobe';
+    color: #FFFFFF;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 74px;
+}
+
+.number-rules{
+    display: flex;
+    align-items: flex-end;
+}
+
+.number-rules p span{
+    font-weight: 700;
+}
+
+.number-rules h2{
+    font-family: 'Roboto';
+    color: #fff;
+    font-size: 80px;
+    align-items: center;
+}
+.number-rules p{
+    font-family: 'Roboto';
+    width: 644px;
+    font-weight: 400px;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+}
+
+.timeline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 43px;
+}
+
+.gp-text{
+    font-family: 'kobe';
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 85px;
+    color: #0C306C;
+    letter-spacing: -5px;
+}
+
+.ft-timeline{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    padding-top: 30px;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 315px;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; 
+}
+
+.timeline-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.timeline-item h2 {
+    position: absolute;
+    top: 359px; 
+    border-radius: 5px; 
+    font-family: 'roboto';
+    font-size: 23px;
+    line-height: 31px;
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.timeline-item p {
+    font-family:'Roboto';
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    position: absolute;
+    top: 392px; 
+    color:#FFFFFF;
+}
+
+.awards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 62px;
+}
+
+.awards p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #0C306C;
+}
+
+.ft-awards{
+    margin-right: 3%;
+    display: flex;
+    gap: 100px;
+    margin-top: 21px;
+}
+
+.award-item img{
+    width: 130%;
+    height: 108%;
+}
+
+
+.video-tutorial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+/* .regulation e .regulations agora estão em modal.css */
+
+
+
+.btn-format{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    height: 52px;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 39px;
+    color: #0C306C;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 9px;
+}
+
+.btn-format img{
+    padding: 0px 9px;
+}
+
+footer{
+    background: url(../images/hackathon-banner-footer.png) no-repeat center center;
+    background-size: cover;
+    height: 526px;
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+}
+
+.gp-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gp-format h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 46px;
+    color: #FFF;
+}
+
+.gp-branding{
+    display: flex;
+    gap: 38px;
+    padding-top: 31px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-format:hover{
+    background-color: #000000;
+    color: #FFF;
+}
+
+.btn-format:hover img{
+    filter: contrast(0);
+}
+
+#logo-logitech{
+    width: 210px;
+    height: 67%;
+}

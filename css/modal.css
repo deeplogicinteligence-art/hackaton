@@ -1,0 +1,386 @@
+﻿/* =========================================================
+   SECTION REGULATION — layout com botao + links
+   ========================================================= */
+.regulation {
+    background-color: #0C306C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 40px 20px;
+    min-height: 314px;
+}
+
+.regulation-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+}
+
+/* Botao Cadastre-se */
+.regulation-signup {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cadastro {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: linear-gradient(135deg, #BED952 0%, #9fc43a 100%);
+    color: #0C306C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1;
+    padding: 14px 36px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: -0.5px;
+    box-shadow: 0 4px 18px rgba(190, 217, 82, 0.4);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.btn-cadastro:hover {
+    background: linear-gradient(135deg, #cce668 0%, #b0d44a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(190, 217, 82, 0.55);
+}
+
+.btn-cadastro:active {
+    transform: translateY(0);
+}
+
+/* Links regulation */
+.regulations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   MODAL OVERLAY
+   ========================================================= */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 22, 54, 0.75);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+
+/* =========================================================
+   MODAL BOX
+   ========================================================= */
+.modal-box {
+    position: relative;
+    background: #fff;
+    border-radius: 16px;
+    padding: 36px 40px 32px;
+    width: 100%;
+    max-width: 660px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    animation: modalSlideIn 0.28s cubic-bezier(0.34, 1.3, 0.64, 1) both;
+}
+
+@keyframes modalSlideIn {
+    from { opacity: 0; transform: scale(0.92) translateY(20px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Botao fechar */
+.modal-close {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #8a9ab5;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 4px;
+    transition: color 0.15s;
+}
+.modal-close:hover { color: #0C306C; }
+
+
+/* =========================================================
+   MODAL HEADER
+   ========================================================= */
+.modal-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid #e8edf5;
+}
+
+.modal-header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0C306C;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   FIELDSET
+   ========================================================= */
+.modal-fieldset {
+    border: 1.5px solid #d0d9ea;
+    border-radius: 10px;
+    padding: 16px 20px 20px;
+    margin-bottom: 18px;
+}
+
+.modal-fieldset legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0C306C;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 0 8px;
+}
+
+
+/* =========================================================
+   CAMPOS DO FORMULARIO
+   ========================================================= */
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.modal-field label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #3a4a6b;
+    letter-spacing: 0.2px;
+}
+
+.modal-field .required {
+    color: #e03636;
+    font-size: 14px;
+}
+
+.modal-field input,
+.modal-field select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #1a2a4a;
+    background: #f5f8fe;
+    border: 1.5px solid #ccd5e8;
+    border-radius: 8px;
+    padding: 10px 13px;
+    outline: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+    width: 100%;
+    box-sizing: border-box;
+    appearance: auto;
+}
+
+.modal-field input:focus,
+.modal-field select:focus {
+    border-color: #0C306C;
+    box-shadow: 0 0 0 3px rgba(12, 48, 108, 0.12);
+    background: #fff;
+}
+
+.modal-field input::placeholder {
+    color: #a0aec0;
+}
+
+/* Layout de duas colunas dentro do form */
+.modal-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.modal-field + .modal-field {
+    margin-top: 14px;
+}
+
+.modal-row .modal-field + .modal-field {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   ACOES DO MODAL
+   ========================================================= */
+.modal-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: flex-end;
+    margin-top: 24px;
+}
+
+.btn-modal-cancel {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a6a8a;
+    background: #f0f3fa;
+    border: 1.5px solid #d0d9ea;
+    border-radius: 8px;
+    padding: 11px 24px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+.btn-modal-cancel:hover {
+    background: #e2e8f5;
+    color: #0C306C;
+}
+
+.btn-modal-submit {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #0C306C;
+    background: linear-gradient(135deg, #BED952 0%, #9fc43a 100%);
+    border: none;
+    border-radius: 8px;
+    padding: 11px 28px;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    box-shadow: 0 3px 12px rgba(190,217,82,0.35);
+}
+.btn-modal-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(190,217,82,0.5);
+}
+
+
+/* =========================================================
+   SUCESSO
+   ========================================================= */
+.modal-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 10px 10px;
+    text-align: center;
+    animation: modalSlideIn 0.3s ease both;
+}
+
+.modal-success h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #0C306C;
+}
+
+.modal-success p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #5a6a8a;
+    max-width: 360px;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE MOBILE
+   ========================================================= */
+@media (max-width: 768px) {
+    .regulation {
+        padding: 32px 16px;
+    }
+
+    .btn-cadastro {
+        font-size: 20px;
+        padding: 12px 26px;
+        gap: 10px;
+    }
+
+    .btn-cadastro svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .regulations {
+        gap: 18px;
+    }
+
+    .modal-box {
+        padding: 28px 22px 24px;
+    }
+
+    .modal-header h2 {
+        font-size: 20px;
+    }
+
+    .modal-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .modal-row .modal-field + .modal-field {
+        margin-top: 14px;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .btn-modal-cancel,
+    .btn-modal-submit {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 430px) {
+    .btn-cadastro {
+        font-size: 18px;
+        padding: 11px 20px;
+    }
+
+    .modal-box {
+        padding: 22px 16px 20px;
+        border-radius: 12px;
+    }
+
+    .modal-fieldset {
+        padding: 12px 14px 16px;
+    }
+
+    .modal-header h2 {
+        font-size: 18px;
+    }
+
+    .modal-header svg {
+        width: 28px;
+        height: 28px;
+    }
+}
