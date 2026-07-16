@@ -670,9 +670,10 @@
     header {
         background: url(../images/hackathon-banner-main.png) no-repeat center center;
         background-size: cover;
+        background-color: #0C306C;
         width: 100%;
-        min-height: 62vh;
-        height: 620px;
+        min-height: 340px;
+        height: min(92vw, 520px);
     }
 
     .about,
@@ -830,9 +831,10 @@
 
 @media (max-width: 430px) {
     header {
-        height: 420px;
-        min-height: 420px;
-        background-position: 60% center;
+        height: 280px;
+        min-height: 280px;
+        background-position: center top;
+        background-size: 165% auto;
     }
 
     .tittle,
