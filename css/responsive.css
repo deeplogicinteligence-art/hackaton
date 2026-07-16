@@ -160,7 +160,7 @@
     #logo-happy{
         width: 170px;
     }
-    #logo-adventista{
+    #logo-ideal{
         width: 230px;
     }
 }
@@ -481,11 +481,6 @@
     .gp-branding{
         flex-direction: column;
     }
-    .second{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
     #logo-logitech{
         width: 50%;
         height: 50%;
@@ -652,10 +647,6 @@
     }
     .gp-branding{
         flex-direction: column;
-    }
-    .second{
-        flex-direction: row;
-        justify-content: center;
     }
     .video-tutorial{
         margin-top: 35px;

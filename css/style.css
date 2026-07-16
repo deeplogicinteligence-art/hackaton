@@ -377,7 +377,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 88px;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .gp-format{
@@ -415,4 +416,8 @@ footer{
 #logo-logitech{
     width: 210px;
     height: 67%;
+}
+
+#logo-ideal{
+    width: 230px;
 }
