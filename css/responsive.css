@@ -665,3 +665,280 @@
         height: 220px;
     }
 }
+
+@media (max-width: 768px) {
+    header {
+        background: url(../images/hackathon-banner-main.png) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        min-height: 62vh;
+        height: 620px;
+    }
+
+    .about,
+    .timeline,
+    .awards,
+    .video-tutorial,
+    .regulation {
+        padding-left: 16px;
+        padding-right: 16px;
+        box-sizing: border-box;
+    }
+
+    .group-about-challenge,
+    .group-whats-challenge,
+    .group-about-theme {
+        width: 100%;
+        max-width: 520px;
+        margin-bottom: 32px;
+    }
+
+    .about-challenge,
+    .whats-challenge,
+    .about-theme {
+        width: 100%;
+        max-width: 100%;
+        gap: 16px;
+    }
+
+    .common-text,
+    .common-text span,
+    .about-theme .common-text {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .group-about-challenge img,
+    .group-whats-challenge img,
+    .group-about-theme img {
+        width: 100%;
+        max-width: 387px;
+        height: auto;
+        display: block;
+    }
+
+    .banner-rules {
+        background: url(../images/hackathon-banner-regras.png) no-repeat center center;
+        background-size: cover;
+        height: auto;
+        min-height: 0;
+        padding: 32px 16px;
+        justify-content: center;
+    }
+
+    .display-rules {
+        width: 100%;
+        max-width: 560px;
+        padding-left: 0;
+    }
+
+    .rules {
+        gap: 18px;
+        padding-top: 20px;
+    }
+
+    .number-rules {
+        width: 100%;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .number-rules p {
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 0;
+    }
+
+    .ft-timeline {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-top: 20px;
+    }
+
+    .timeline-item {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .timeline-item h2 {
+        left: 16px;
+        right: 16px;
+        top: auto;
+        bottom: 56px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .timeline-item p {
+        left: 16px;
+        right: 16px;
+        top: auto;
+        bottom: 20px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    .ft-awards {
+        margin-right: 0;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .award-item img {
+        width: min(100%, 320px);
+        height: auto;
+    }
+
+    .video-tutorial iframe {
+        width: 100%;
+        max-width: 720px;
+        height: min(56.25vw, 405px);
+        min-height: 220px;
+    }
+
+    .regulations {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .btn-format,
+    .btn-cadastro {
+        width: 100%;
+        max-width: 420px;
+        min-height: 56px;
+        text-align: center;
+    }
+
+    footer {
+        height: auto;
+        min-height: 0;
+        padding: 40px 16px;
+        gap: 28px;
+        background-position: center;
+    }
+
+    .gp-format,
+    .gp-branding {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    header {
+        height: 420px;
+        min-height: 420px;
+        background-position: 60% center;
+    }
+
+    .tittle,
+    .gp-text {
+        font-size: 38px;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .tittle-rules {
+        font-size: 28px;
+        line-height: 1;
+        padding-top: 0;
+    }
+
+    .common-text,
+    .common-text span,
+    .about-challenge p,
+    .whats-challenge p,
+    .about-theme p {
+        font-size: 16px;
+        line-height: 1.45;
+    }
+
+    .about-challenge h2,
+    .whats-challenge h2,
+    .about-theme h2 {
+        font-size: 40px;
+        line-height: 0.95;
+    }
+
+    .group-about-challenge img,
+    .group-whats-challenge img,
+    .group-about-theme img {
+        max-width: 100%;
+    }
+
+    .number-rules h2 {
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    .number-rules p {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .timeline-item {
+        max-width: 100%;
+    }
+
+    .timeline-item h2 {
+        bottom: 54px;
+        font-size: 16px;
+    }
+
+    .timeline-item p {
+        bottom: 20px;
+        font-size: 16px;
+    }
+
+    .btn-format,
+    .btn-cadastro {
+        font-size: 18px;
+        line-height: 1.2;
+        padding: 12px 18px;
+    }
+
+    .btn-format img {
+        width: 28px;
+        height: 28px;
+        padding: 0 8px 0 0;
+    }
+
+    .video-tutorial iframe {
+        min-height: 200px;
+    }
+
+    .modal-box {
+        padding: 24px 18px 20px;
+    }
+
+    .modal-row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 320px) {
+    .tittle,
+    .gp-text {
+        font-size: 32px;
+    }
+
+    .about,
+    .timeline,
+    .awards,
+    .video-tutorial,
+    .regulation,
+    .banner-rules,
+    footer {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .btn-format,
+    .btn-cadastro {
+        font-size: 16px;
+    }
+}
